@@ -1,0 +1,21 @@
+{
+    "branches": [
+        "master",
+        {name: 'test', prerelease: true},
+        {name: 'test-1', prerelease: true}
+    ],
+    "plugins": [
+        "@semantic-release/git",
+        '@semantic-release/commit-analyzer',
+        '@semantic-release/release-notes-generator',
+        '@semantic-release/npm',
+        [
+          "semantic-release-commits-lint",
+            {
+              "commitlintConfig": {
+                "extends": ["@commitlint/config-conventional"]
+              }
+            }
+        ]
+    ]
+}
