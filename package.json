@@ -1,0 +1,23 @@
+{
+  "name": "semantic-release-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sem-rel": "semantic-release --dry-run --no-ci -d"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.4.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^18.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BondarenkoAlex/sm-test.git"
+  }
+}
