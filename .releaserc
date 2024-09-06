@@ -5,6 +5,17 @@
         {name: 'test-1', prerelease: true}
     ],
     "plugins": [
-        "@semantic-release/git"
+        "@semantic-release/git",
+        [
+          "semantic-release-commits-lint",
+            {
+              "commitlintConfig": {
+                "extends": ["@commitlint/config-conventional"],
+                "rules": {
+                  "type-case": [2, "always", ["pascal-case"]]
+                }
+              }
+            }
+        ]
     ]
 }
